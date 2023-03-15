@@ -1,0 +1,107 @@
+._container {
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
+.how_i_work{
+    background: linear-gradient(to bottom,  rgba(245, 245, 220, 0.281) 0.1%,#7A7B86 5%,#7A7B86 7%);
+    margin-top: 30px;
+}
+
+.how_i_work_title{
+    padding: 100px 0 40px 0;
+    font-family: 'Viaoda Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 116px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.how_i_work_text{
+    margin: 13px 0 33px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.how_i_work_inf{
+    display: flex;
+    align-items: center;
+}
+.how_i_work_t{
+    display: flex;
+    flex-direction: column
+
+}
+
+.how_i_work_img{
+    width: 359px;
+    height: 479px;
+    margin: 15px;
+}
+
+@media (max-width: 992px){
+    .how_i_work_title{
+        font-size: 70px;
+        line-height: 70px;
+        padding-top: 120px;
+    }
+    .how_i_work_text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .how_i_work_img {
+        width: 319px;
+        height: 419px;
+    }
+}
+
+@media (max-width: 769px){
+    .how_i_work_title{
+        font-size: 60px;
+        line-height: 60px;
+        padding-top: 100px;
+    }
+    .how_i_work_text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .how_i_work_img {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 551px){
+    .how_i_work_title{
+        padding-top: 120px;
+        font-size: 50px;
+        line-height: 71px;
+        text-align: center;
+    }
+    .how_i_work_title{
+        margin-top: 100px;
+    }
+    .how_i_work_inf {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .how_i_work_img {
+        width: 367px;
+        height: 444px;
+    }
+    .how_i_work_text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+    ._work_img2 {
+        flex-wrap: wrap;
+    }
+}

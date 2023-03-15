@@ -1,0 +1,69 @@
+.footer_title{
+    font-family: 'Viaoda Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 116px;
+    text-align: center; 
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.footer__contacts{
+    padding-top: 30px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.contacts-footer__item{
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding-left: 49px;
+    height: 50px;
+    padding-top: 4px;
+}
+
+.contacts-footer__item:hover{
+    text-decoration: underline;
+}
+
+.contacts-footer__item__phone{
+    background: url(../../resources/img/Vector.svg) 0 0 no-repeat;
+
+}
+
+.contacts-footer__item__ins{
+    background: url(../../resources/img/Vector2.svg) 0 0 no-repeat;
+}
+
+.contacts-footer__item__w{
+    background: url(../../resources/img/Vector3.svg) 0 0 no-repeat;
+}
+
+@media (max-width: 551px){
+    .footer__contacts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer_title {
+        font-size: 50px;
+        line-height: 71px;
+        text-align: center;
+    }
+    .contacts-footer__item {
+        margin: 3px 25px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 769px){
+    .contacts-footer__item {
+        margin: 3px 25px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

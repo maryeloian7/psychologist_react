@@ -1,0 +1,153 @@
+._container {
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
+.why_me{
+    min-height: 650px;
+    background: linear-gradient(to bottom,  #7A7B86 0.1%,#7A7B86 2%, rgba(245, 245, 220, 0.097) 10%);
+}
+
+.why_me_title{
+    padding-top: 130px;
+    font-family: 'Viaoda Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 116px;
+    text-align: center;
+    color: #323542;
+}
+
+.why_me_bloc{
+    display: flex;
+    justify-content: space-between;
+}
+.why_me_numbers:not(:last-child){
+    margin-right: 31px;
+}
+
+.why_me_numbers{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    width: 300px;
+    margin-top: 50px;
+}
+.why_me_num{
+    font-family: 'Viaoda Libre';
+    font-size: 75px;
+    color: rgba(50, 53, 66, 0.9);
+}
+.why_me_kind{
+    font-family: 'Viaoda Libre';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(50, 53, 66, 0.9);
+}
+.why_me_text{
+    width: 360px;
+    margin-top: 31px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #323542;
+}
+
+@media (max-width: 633px){
+    .why_me_bloc{
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+@media (max-width: 992px){
+    .why_me_title{
+        font-size: 70px;
+        line-height: 70px;
+        padding-top: 120px;
+    }
+    .why_me_num{
+        font-size: 55px;
+    }
+    .why_me_kind{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .why_me_text{
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 769px){
+    .why_me_title{
+        font-size: 60px;
+        line-height: 60px;
+        padding-top: 100px;
+    }
+    .why_me_num{
+        font-size: 50px;
+    }
+    .why_me_kind{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .why_me_text{
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 551px){
+    .why_me_title{
+        padding-top: 120px;
+        font-size: 50px;
+        line-height: 71px;
+        text-align: center;
+    }
+    .why_me_bloc {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .why_me_num {
+        font-size: 28px;
+    }
+    .why_me_kind {
+        font-size: 28px;
+    }
+    .why_me_text {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
+    .why_me_numbers:not(:last-child) {
+        margin-right: 0px;
+    }
+    .why_me{
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 913px){
+    .why_me_bloc{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+}
+
+@media (max-width: 325px){
+    .why_me_text {
+        width: 315px;
+    }
+}
