@@ -246,6 +246,10 @@
     .service__button_bloc {
         padding-bottom: 5px;
     }
+    .important{
+        font-size: 17px;
+
+    }
 }
 
 @media (max-width: 913px){
