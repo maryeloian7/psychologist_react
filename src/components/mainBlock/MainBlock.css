@@ -182,7 +182,7 @@ h1{
     }
     .foto {
         margin-right: 0px;
-        width: 272px;
+        width: 240px;
         height: 380px;
     }
     ._main__button{
@@ -194,6 +194,9 @@ h1{
         padding-left: 0px;
         font-size: 16px;
         line-height: 20px;
+    }
+    h1{
+        padding-top: 0px;
     }
     .text3{
         margin: 18px 0 0 0;
@@ -215,6 +218,9 @@ h1{
 @media (max-width: 375px){
     ._block__button {
         min-width: 300px;
+    }
+    h1{
+        padding-top: 0px;
     }
 }
 

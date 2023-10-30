@@ -11,7 +11,7 @@ const Cases4 = () => {
 
     useEffect(() => {
         setHeightEl(`${refHeight.current.scrollHeight}px`)
-    }, [])
+    })
 
     return (
         <div className="cases_bloc block">
@@ -19,7 +19,7 @@ const Cases4 = () => {
             onClick={()=>setToggle(!toggle)}
             className="cases_item _item">
                 <span>Ребенок постоянно болеет!</span>
-                <img className="cross" src={Group} alt=""/>
+                <img className={toggle ? 'cross_activ' : 'cross' } src={Group} alt=""/>
             </div>
             <div 
             className={toggle ? "accordion__body animated" : "accordion__body "}
@@ -27,7 +27,7 @@ const Cases4 = () => {
             ref={refHeight}
             >
                 <p 
-                className="cases_item_tit"
+                className="cases_item_tit _item_tit"
                 aria-hidden={toggle ? "true" : "false"}>
                     <span className="cases_titles">Запрос:</span><br/>  Ребенок 9 лет. Постоянно болеет. Не складываются отношения со сверстниками, постоянно впадает в состояние жертвы. 
                 </p>

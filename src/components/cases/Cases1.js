@@ -11,7 +11,7 @@ const Cases1 = () => {
 
     useEffect(() => {
         setHeightEl(`${refHeight.current.scrollHeight}px`)
-    }, [])
+    })
 
     return (
         <div className="cases_bloc cases_bloc1 block">
@@ -19,7 +19,7 @@ const Cases1 = () => {
             onClick={()=>setToggle(!toggle)}
             className="cases_item _item">
                 <span>Плохая мама?</span>
-                <img className="cross" src={Group} alt=""/>
+                <img className={toggle ? 'cross_activ' : 'cross' }src={Group} alt=""/>
             </div>
             <div 
             className={toggle ? "accordion__body animated" : "accordion__body "}
@@ -27,7 +27,7 @@ const Cases1 = () => {
             ref={refHeight}
             >
                 <p 
-                className="cases_item_tit"
+                className="cases_item_tit _item_tit"
                 aria-hidden={toggle ? "true" : "false"}>
                     <span className="cases_titles">Запрос:</span><br/> Мама постоянно срывается на ребенка, плачет, может даже схватить, трясти, толкнуть, а после испытывает ужасное чувство вины. И так по кругу. Хочет научиться себя контролировать. 
                 </p>

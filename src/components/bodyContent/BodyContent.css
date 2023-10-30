@@ -201,3 +201,9 @@
         line-height: 19px;
     }
 }
+@media (max-width: 365px){
+    .body_title_text {
+        width: 320px;
+        line-height: 19px;
+    }
+}
