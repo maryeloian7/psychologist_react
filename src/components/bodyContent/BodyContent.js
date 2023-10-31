@@ -7,7 +7,7 @@ import '../bodyContent/BodyContent.css'
 
 const BodyContent = () => {
     return(
-        <div className="body_content">
+        <div className="body_content" id='BodyContent'>
                     <div className="body_content_inform _container">
                         <h2 className="body_text">Направления<br/><span className="body_text_br">моей работы</span></h2>
                         <div className="body_inform">

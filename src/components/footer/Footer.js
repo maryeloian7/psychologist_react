@@ -2,7 +2,7 @@ import '../footer/Footer.css';
 
 const Footer = () => {
     return(
-        <div  className="_container">
+        <div  className="_container" id='Footer'>
         <h2 className="footer_title">Контакты</h2>
         <div className="footer__contacts contacts-footer">
             <a href="tel:+375293399703" className="contacts-footer__item contacts-footer__item__phone">+375 29 339-97-03</a>

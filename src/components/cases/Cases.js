@@ -10,7 +10,7 @@ import '../cases/Cases.css'
 const Cases = () => {
 
     return (
-        <div className="cases">
+        <div className="cases" id='Cases'>
             <div className="  _container">
                 <h2 className="cases_title">Кейсы</h2>
         <div className="cases_bloc block"> 
