@@ -6,8 +6,9 @@
 }
 
 .main-block__container{
-    max-height: 750px;
-    padding: 90px 0 100px 0;
+    /* max-height: 750px; */
+    height: calc(100vh - 70px);
+    padding: 50px 0 100px 0;
 }
 
 
