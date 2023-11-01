@@ -1,27 +1,114 @@
-.header{
-    background: linear-gradient(to bottom,  #7A7B86 48%,#7a7b86 10%, rgba(245, 245, 220, 0.097) 100%);
-    height: 80px;
-    font-weight: 600;
+.header {
+  background: linear-gradient(
+    to bottom,
+    #7a7b86 59%,
+    #7a7b86 10%,
+    rgba(245, 245, 220, 0.097) 70%
+  );
+  height: 80px;
+  font-weight: 600;
 }
 
-.header_block{
-    height: 70px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+.header_block {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header_logo{
+.header_logo {
+}
+.header_itemLink {
+  color: #f4f3ef;
+  font-size: 15px;
+  transition: 0.6s ease;
+}
+.header_itemLink:hover {
+  text-shadow: 0px -1px 19px #fafafa;
+  transition: 0.4s ease;
+}
+.header_items {
+  display: flex;
+  gap: 120px;
+}
 
+.header_item {
 }
-.header_itemLink{
-    color: #F4F3EF;
-    font-size: 16px;
-}
-.header_items{
-    display: flex;
-    gap: 120px;
 
+.mobileBurgerButton {
+  display: none;
 }
-.header_item{
+@media (max-width: 1200px) {
+  .header_block {
+    justify-content: space-around;
+  }
+  .header_items {
+    gap: 70px;
+  }
+}
+@media (max-width: 888px) {
+  .header_items {
+    gap: 44px;
+  }
+}
+@media (max-width: 768px) {
+  .mobileBurgerButton {
+    display: block;
+    cursor: pointer;
+    padding: 0 30px 0 0;
+  }
+  .header {
+    position: fixed;
+  }
+  .header_block {
+    height: 50px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+    background:#7a7b86;
+  }
 
+  .header_items {
+    gap: 35px;
+    transition: height 0.3s ease;
+    overflow: hidden;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    flex-direction: column;
+    background:#7a7b86;
+    align-items: end;
+}
+.active{
+    padding: 5px 25px 25px 25px;
+    top: 50px;
+  }
+.header_block {
+    justify-content: space-between;
+}
+}
+.mobileBurgerButton div {
+  width: 23px;
+  height: 2px;
+  border-radius: 5px;
+  margin: 5px;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
+
+/* .nav__active {
+  opacity: 1;
+  display: flex;
+  transition: 0.3s ease;
+} */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(0px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -10px);
 }

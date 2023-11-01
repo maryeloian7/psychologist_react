@@ -1,6 +1,15 @@
+import { useState, useEffect } from "react";
+
 import "./Header.css"
 
 const Header = () => {
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
+  const onNavMenuOpen = () => {
+    setIsBurgerOpen(!isBurgerOpen)
+  }
+
+
   return (
     <div>
       <header className="header " id="header">
@@ -8,7 +17,7 @@ const Header = () => {
           <a href="#header" className="header_logo">
             <img src="{LogoIcon.src}" alt="logo" />
           </a>
-          <ul className="header_items">
+          <ul className={isBurgerOpen ? "header_items active" : "header_items"}>
             <li className="header_item _work">
               <a href="#BodyContent" className="header_itemLink">
                 Направления моей работы
@@ -35,10 +44,11 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <div className="">
+          <div className={isBurgerOpen ? 'toggle mobileBurgerButton' : 'mobileBurgerButton'}
+          onClick={onNavMenuOpen}>
             <div className="line1"></div>
             <div className="line2"></div>
-            <div className="line3"></div>
+            <div className="line3 "></div>
           </div>
         </nav>
       </header>
