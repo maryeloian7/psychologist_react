@@ -11,13 +11,13 @@ const Header = () => {
   const closeMenu = () => {
     setIsBurgerOpen(false);
   };
-  const menuItems = [
-    "Направления моей работы",
-    "Как я работаю?",
-    "Кейсы",
-    "Услуги",
-    "Контакты",
-  ];
+  const data =[
+    {name: 'Направления моей работы', href: "#BodyContent"},
+    {name: 'Как я работаю ?', href: "#HowWork"},
+    {name: 'Кейсы', href: "#Cases"},
+    {name: 'Услуги', href: "#Service"},
+    {name: ' Контакты', href: "#Footer"},
+  ]
   return (
     <div>
       <header className="header " id="header">
@@ -29,15 +29,15 @@ const Header = () => {
             onClick={closeMenu}
             className={isBurgerOpen ? "header_items active" : "header_items"}
           >
-            {menuItems.map((items) => {
-              return (
-                <li className="header_item _work" key={items}>
-                  <a href="#BodyContent" className="header_itemLink">
-                    {items}
-                  </a>
-                </li>
-              );
-            })}
+           {data.map((row) =>{
+            return(
+            <li className="header_item _work" key={row}>
+              <a href={row.href} className="header_itemLink">
+                {row.name}
+              </a>
+            </li>
+            )
+           })} 
           </ul>
           <div
             className={
