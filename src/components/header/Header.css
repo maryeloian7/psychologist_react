@@ -15,8 +15,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.header_logo {
-}
+
 .header_itemLink {
   color: #f4f3ef;
   font-size: 15px;
@@ -29,9 +28,6 @@
 .header_items {
   display: flex;
   gap: 120px;
-}
-
-.header_item {
 }
 
 .mobileBurgerButton {
@@ -71,7 +67,6 @@
 
   .header_items {
     gap: 35px;
-    transition: height 0.3s ease;
     overflow: hidden;
     position: fixed;
     top: -100%;
@@ -80,10 +75,12 @@
     flex-direction: column;
     background:#7a7b86;
     align-items: end;
+    transition: all .7s;
 }
 .active{
     padding: 5px 25px 25px 25px;
     top: 50px;
+    transition: all .6s;
   }
 .header_block {
     justify-content: space-between;

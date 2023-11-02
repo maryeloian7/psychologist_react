@@ -1,15 +1,23 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-import "./Header.css"
+import "./Header.css";
 
 const Header = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
-
   const onNavMenuOpen = () => {
-    setIsBurgerOpen(!isBurgerOpen)
-  }
+    setIsBurgerOpen(!isBurgerOpen);
+  };
 
-
+  const closeMenu = () => {
+    setIsBurgerOpen(false);
+  };
+  const menuItems = [
+    "Направления моей работы",
+    "Как я работаю?",
+    "Кейсы",
+    "Услуги",
+    "Контакты",
+  ];
   return (
     <div>
       <header className="header " id="header">
@@ -17,35 +25,26 @@ const Header = () => {
           <a href="#header" className="header_logo">
             <img src="{LogoIcon.src}" alt="logo" />
           </a>
-          <ul className={isBurgerOpen ? "header_items active" : "header_items"}>
-            <li className="header_item _work">
-              <a href="#BodyContent" className="header_itemLink">
-                Направления моей работы
-              </a>
-            </li>
-            <li className="header_item">
-              <a href="#HowWork" className="header_itemLink">
-                Как я работаю ?
-              </a>
-            </li>
-            <li className="header_item">
-              <a href="#Cases" className="header_itemLink">
-                Кейсы
-              </a>
-            </li>
-            <li className="header_item">
-              <a href="#Service" className="header_itemLink">
-                Услуги
-              </a>
-            </li>
-            <li className="header_item">
-              <a href="#Footer" className="header_itemLink">
-                Контакты
-              </a>
-            </li>
+          <ul
+            onClick={closeMenu}
+            className={isBurgerOpen ? "header_items active" : "header_items"}
+          >
+            {menuItems.map((items) => {
+              return (
+                <li className="header_item _work" key={items}>
+                  <a href="#BodyContent" className="header_itemLink">
+                    {items}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
-          <div className={isBurgerOpen ? 'toggle mobileBurgerButton' : 'mobileBurgerButton'}
-          onClick={onNavMenuOpen}>
+          <div
+            className={
+              isBurgerOpen ? "toggle mobileBurgerButton" : "mobileBurgerButton"
+            }
+            onClick={onNavMenuOpen}
+          >
             <div className="line1"></div>
             <div className="line2"></div>
             <div className="line3 "></div>
