@@ -1,5 +1,5 @@
 import {  Link } from 'react-router-dom';
-import ava from '../../resources/img/icn2.png';
+import ava from '../../resources/img/ava.jpeg';
 import '../mainBlock/MainBlock.css';
 
 const MainBlock = () => {
