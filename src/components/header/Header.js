@@ -13,7 +13,7 @@ const Header = () => {
   };
   const data =[
     {name: 'Направления моей работы', href: "#BodyContent"},
-    {name: 'Как я работаю ?', href: "#HowWork"},
+    {name: 'Как я работаю ?', href: "#HowIWork"},
     {name: 'Кейсы', href: "#Cases"},
     {name: 'Услуги', href: "#Service"},
     {name: ' Контакты', href: "#Footer"},
@@ -29,9 +29,9 @@ const Header = () => {
             onClick={closeMenu}
             className={isBurgerOpen ? "header_items active" : "header_items"}
           >
-           {data.map((row) =>{
+           {data.map((row, i) =>{
             return(
-            <li className="header_item _work" key={row}>
+            <li className="header_item _work" key={i}>
               <a href={row.href} className="header_itemLink">
                 {row.name}
               </a>

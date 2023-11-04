@@ -28,15 +28,15 @@ const Service = () => {
       <div className="service_bloc _container">
         <h2 className="service_title">Услуги</h2>
         <div className="service_content">
-          {data.map((i) => {
+          {data.map((item, i) => {
             return (
               <div className="service_inform block__button" key={i}>
-                <div className="service_title_inform">{i.service}</div>
-                <p className="service_text _serv_text">{i.time}<br/>{i.time2}</p>
-                <p className="service_price">{i.price}</p>
+                <div className="service_title_inform">{item.service}</div>
+                <p className="service_text _serv_text">{item.time}<br/>{item.time2}</p>
+                <p className="service_price">{item.price}</p>
                 <div className="service__block__button _block__button service__button">
                   <NavLink to="/form" data-modal>
-                    <div className="text_button">{i.button}</div>
+                    <div className="text_button">{item.button}</div>
                   </NavLink>
                 </div>
               </div>
