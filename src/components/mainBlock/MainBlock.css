@@ -207,6 +207,8 @@ h1{
     }
     .main-block__container {
         margin-bottom: 0px;
+        padding-top: 60px;
+        height: calc(100vh + 70px);
     }
     .ls {
         padding-left: 0px;
