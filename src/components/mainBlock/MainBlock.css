@@ -6,8 +6,9 @@
 }
 
 .main-block__container{
-    max-height: 750px;
-    padding: 90px 0 100px 0;
+    /* max-height: 750px; */
+    height: calc(100vh - 70px);
+    padding: 50px 0 100px 0;
 }
 
 
@@ -182,7 +183,7 @@ h1{
     }
     .foto {
         margin-right: 0px;
-        width: 272px;
+        width: 240px;
         height: 380px;
     }
     ._main__button{
@@ -195,6 +196,9 @@ h1{
         font-size: 16px;
         line-height: 20px;
     }
+    h1{
+        padding-top: 0px;
+    }
     .text3{
         margin: 18px 0 0 0;
     }
@@ -203,6 +207,8 @@ h1{
     }
     .main-block__container {
         margin-bottom: 0px;
+        padding-top: 60px;
+        height: calc(100vh + 70px);
     }
     .ls {
         padding-left: 0px;
@@ -215,6 +221,9 @@ h1{
 @media (max-width: 375px){
     ._block__button {
         min-width: 300px;
+    }
+    h1{
+        padding-top: 0px;
     }
 }
 

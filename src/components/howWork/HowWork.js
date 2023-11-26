@@ -4,7 +4,7 @@ import '../howWork/HowWork.css'
 
 const HowWork = () => {
     return(
-        <div className="how_i_work">
+        <div className="how_i_work" id="HowIWork">
         <div className=" _container">
             <div>
                 <h2 className="how_i_work_title">

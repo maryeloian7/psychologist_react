@@ -135,6 +135,9 @@
     .why_me{
         margin-bottom: 90px;
     }
+    .why_me_text {
+        width: 300px;
+    }
 }
 
 @media (max-width: 913px){
@@ -145,6 +148,8 @@
     }
 
 }
+
+
 
 @media (max-width: 325px){
     .why_me_text {
