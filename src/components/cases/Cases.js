@@ -9,6 +9,50 @@ import '../cases/Cases.css'
 
 const Cases = () => {
 
+//     import React, { useState } from 'react';
+
+// const TabComponent = ({ tabs, tabsContent, tabsParentSelector, activeClass }) => {
+//   const [activeTab, setActiveTab] = useState(0);
+
+//   const hideTabContent = () => {
+//     tabsContent.forEach((item) => {
+//       item.classList.add('hide');
+//       item.classList.remove('show', 'fade');
+//     });
+
+//     tabs.forEach((item) => {
+//       item.classList.remove(activeClass);
+//     });
+//   };
+
+//   const showTabContent = (i) => {
+//     tabsContent[i].classList.add('show', 'fade');
+//     tabsContent[i].classList.remove('hide');
+//     tabs[i].classList.add(activeClass);
+//   };
+
+//   const handleTabClick = (i) => {
+//     hideTabContent();
+//     showTabContent(i);
+//     setActiveTab(i);
+//   };
+
+//   return (
+//     <div>
+//       {tabs.map((tab, i) => (
+//         <div
+//           key={i}
+//           className={activeTab === i ? `${tabsSelector.slice(1)} ${activeClass}` : tabsSelector.slice(1)}
+//           onClick={() => handleTabClick(i)}
+//         >
+//           {tab}
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+
     return (
         <div className="cases" id='Cases'>
             <div className="  _container">

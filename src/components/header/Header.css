@@ -1,8 +1,8 @@
 .header {
   background: linear-gradient(
     to bottom,
-    #7a7b86 59%,
-    #7a7b86 10%,
+    #7a7b86bb 59%,
+    #7a7b86d5 10%,
     rgba(245, 245, 220, 0.097) 70%
   );
   height: 80px;
@@ -10,19 +10,21 @@
 }
 
 .header_block {
-  height: 70px;
+  height: 52px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .header_itemLink {
-  color: #f4f3ef;
+  /* color: darkblue; */
+  color: #f4f3ef6f;
   font-size: 15px;
   transition: 0.6s ease;
 }
 .header_itemLink:hover {
-  text-shadow: 0px -1px 19px #fafafa;
+  /* text-shadow: 0px -1px 19px #fafafa; */
+  color: #f4f3efd8;
   transition: 0.4s ease;
 }
 .header_items {
@@ -62,7 +64,7 @@
     top: 0;
     left: 0;
     z-index: 10001;
-    background:#7a7b86;
+    background:#7a7b86b6;
   }
 
   .header_items {
@@ -73,7 +75,7 @@
     left: 0;
     width: 100vw;
     flex-direction: column;
-    background:#7a7b86;
+    background:#7a7b86b6;
     align-items: end;
     transition: all .7s;
 }

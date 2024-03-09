@@ -22,9 +22,9 @@ const Header = () => {
     <div>
       <header className="header " id="header">
         <nav className="header_block _container">
-          <a href="#header" className="header_logo">
+          {/* <a href="#header" className="header_logo">
             <img src="{LogoIcon.src}" alt="logo" />
-          </a>
+          </a> */}
           <ul
             onClick={closeMenu}
             className={isBurgerOpen ? "header_items active" : "header_items"}
