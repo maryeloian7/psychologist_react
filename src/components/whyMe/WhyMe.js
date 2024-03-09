@@ -33,19 +33,19 @@ const WhyMe = () => {
     const animatedProps1 = useSpring({
       number: isVisible ? 1000 : 1,
       from: { number: 1 },
-      config: { duration: 1500 },
+      config: { duration: 2700 },
     });
 
       const animatedProps2 = useSpring({
         number: isVisible ? 15 : 1,
         from: { number: 1 },
-        config: { duration: 1500 }, 
+        config: { duration: 2700 }, 
       });
     
       const animatedProps3 = useSpring({
         number: isVisible ? 200 : 1,
         from: { number: 1 },
-        config: { duration: 1500 }, 
+        config: { duration: 2700 }, 
       });
 
 
