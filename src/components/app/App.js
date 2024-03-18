@@ -8,7 +8,7 @@ import Cases from "../cases/Cases";
 import Service from "../servicee/Service";
 import Footer from "../footer/Footer";
 import Modal from "../modal/Modal";
-import Header from "../header/Header";
+// import Header from "../header/Header";
 
 
 
@@ -20,7 +20,7 @@ function App() {
       <div className="App">
           <div className="wrapper">
             <main className="content">
-              <Header/>
+              {/* <Header/> */}
               <MainBlock/>
               <BodyContent/>
               <WhyMe/>

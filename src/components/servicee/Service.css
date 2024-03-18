@@ -68,7 +68,7 @@
 
 .service_content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -131,6 +131,11 @@
     line-height: 29px;
     margin-top: 8px;
     
+}
+@media (max-width: 992px){
+    .service__button{
+        width: 240px;
+    }
 }
 
 @media (max-width: 633px){
